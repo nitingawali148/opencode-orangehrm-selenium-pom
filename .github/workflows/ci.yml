@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Tests
-        run: pytest tests/ -v --html=reports/report.html --screenshot=on
+        run: pytest tests/ -v --html=reports/report.html
 
       - name: Upload Test Report
         if: always()
